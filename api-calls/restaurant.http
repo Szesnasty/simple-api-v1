@@ -1,0 +1,33 @@
+### Create Restaurant
+POST http://localhost:4100/restaurants
+Content-Type: application/json
+
+{
+  "name": "To satiety restaurant",
+  "address": "1610 Main Street"
+}
+
+### Read Restaurant
+GET http://localhost:4100/restaurants
+
+
+### Read Restaurant
+GET http://localhost:4100/restaurants?page=1&count=4
+
+
+### Read Restaurant with id:2
+GET http://localhost:4100/restaurants/4
+
+
+### Update Restaurant PATCH | PUT
+PATCH http://localhost:4100/restaurants/1
+Content-Type: application/json
+
+{
+  "name": "The best restaurant"
+}
+
+
+### Delete Restaurant
+DELETE http://localhost:4100/restaurants/2
+Content-Type: application/json
